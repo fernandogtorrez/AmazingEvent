@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./assets/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 28vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.719);
+}
+
+header img{
+    margin-top: 2rem;
+}
+
+nav{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+nav a{
+    margin: 0 .5rem;
+    padding: 1rem 1.3rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: ease-out 0.5s;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: #9f0fb3;
+}
+
+nav a:active{
+    transform: scale(0.9);
+}
+
+
+.registro{
+    margin: 15px;
+    text-align: center;
+    color: #ffffff;
+    transition: ease-out 0.5s;
+    border: 2px solid #9f0fb3;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #9f0fb3;
+}
+
+.registro:hover{
+    box-shadow: inset 0 -100px 0 0 #9f0fb3;
+}
+
+.registro:active{
+    transform: scale(0.9);
+}
+
+
+/*main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 75vh;
+}
+
+section{
+    padding-top: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+section h1{
+    font-size: 50px;
+}
+
+section p{
+    font-size: 20px;
+    padding-top: 2rem;
+}
+
+/*CARD*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all .25s;
+    background-color: rgba(125, 87, 154, 0.575);
+    color: white;
+}
+
+.container .card:hover{
+    transform:  translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h2{
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 45%;
+    padding: 1rem;
+    
+}
+
+.vertodos{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.vertodos div{
+    margin-top: 1rem;
+}
+
+.vertodos div a{
+    margin: 0 .5rem;
+    padding: 1rem 1.3rem;
+    border: 2px solid #9f0fb3;
+    background-color: rgb(218, 182, 213);
+    font-size: 1.2rem;
+    color: #000000;
+    transition: ease-out 0.5s;
+    border-radius: 10px;
+}
+
+.vertodos a:hover{
+    background-color: #9f0fb3;
+    color: white;
+}
+
+.vertodos a:active{
+    transform: scale(0.9);
+}
+
+.evento-pasados{
+    margin-top: 5rem;
+}
+
+footer{
+    margin: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+/*Registro*/
+
+.container-register{
+    max-width: 700px;
+    width: 100%;
+    background-color: lavenderblush;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container-register .title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container-register .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(165, 14, 14);
+
+}
+
+.container-register form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus{
+    border-color: #9f0fb3;
+}
+
+.input-option{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-option label{
+    font-size: 20px;
+}
+
+.input-option select{
+    width: 40%;
+    height: 30px;
+}
+
+.input-option select:focus{
+    border-color: #9f0fb3;
+}
+
+.button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+.button input{
+    height: 100%;
+    width: 40%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(218, 182, 213);
+    cursor: pointer;
+}
+
+.button input:hover{
+    background-color: #9f0fb3;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+
+/*Responsive*/
+
+@media screen and (min-width: 561px) {
+    header{
+        height: 20vh;
+    }
+} 
+
+@media screen and (min-width: 1020px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 13vh;
+    }
+    header img, nav{
+        margin: 0 3rem;
+    }
+
+    img{
+        margin-top: 0;
+    }
+
+    nav a{
+        font-size: 1.3rem;
+    }
+}
