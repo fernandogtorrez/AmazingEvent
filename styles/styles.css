@@ -12,8 +12,9 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-image: url(./assets/fondo.jpg);
+    background-image: url(../assets/fondo.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
@@ -24,7 +25,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 28vh;
+    height: 35vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.719);
 }
 
@@ -86,7 +87,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     min-height: 75vh;
 }
@@ -104,6 +104,29 @@ section h1{
 section p{
     font-size: 20px;
     padding-top: 2rem;
+}
+
+.input{
+    padding-top: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.input input{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease; 
+}
+
+.input input:focus{
+    border-color: #9f0fb3;
 }
 
 /*CARD*/
@@ -163,38 +186,17 @@ section p{
     
 }
 
-.vertodos{
-    display: flex;
-    justify-content: flex-end;
-    width: 90%;
+.evento-pasados{
+    margin-top: 5rem;
 }
 
-.vertodos div{
-    margin-top: 1rem;
-}
-
-.vertodos div a{
-    margin: 0 .5rem;
-    padding: 1rem 1.3rem;
-    border: 2px solid #9f0fb3;
-    background-color: rgb(218, 182, 213);
-    font-size: 1.2rem;
-    color: #000000;
-    transition: ease-out 0.5s;
-    border-radius: 10px;
-}
-
-.vertodos a:hover{
-    background-color: #9f0fb3;
+.detalle{
     color: white;
 }
 
-.vertodos a:active{
-    transform: scale(0.9);
-}
-
-.evento-pasados{
-    margin-top: 5rem;
+.detalle:hover{
+    color: blueviolet;
+    transition: 0.5s ease;
 }
 
 footer{
@@ -207,11 +209,14 @@ footer{
 /*Registro*/
 
 .container-register{
+    display: flex;
+    flex-direction: column;
     max-width: 700px;
     width: 100%;
     background-color: lavenderblush;
     padding: 25px 30px;
     border-radius: 5px;
+    margin-top: 2rem;
 }
 
 .container-register .title{
@@ -306,11 +311,35 @@ form .user-details .input-box{
 }
 
 
+/*Tablas*/
+
+.summary{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.tablas{
+    width: 50%;
+    margin: 3rem;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border:2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(125, 87, 154, 0.575);
+}
+
+
 /*Responsive*/
 
 @media screen and (min-width: 561px) {
     header{
-        height: 20vh;
+        height: 30vh;
     }
 } 
 
