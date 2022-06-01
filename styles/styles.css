@@ -107,7 +107,7 @@ section p{
 }
 
 .input{
-    padding-top: 3rem;
+    
     text-align: center;
     color: #fff;
 }
@@ -204,6 +204,20 @@ footer{
     font-size: 1.5rem;
     text-align: center;
     color: white;
+}
+
+.select-category{
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.container-select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 /*Registro*/
@@ -341,6 +355,7 @@ th, td{
     header{
         height: 30vh;
     }
+    
 } 
 
 @media screen and (min-width: 1020px){
@@ -361,5 +376,8 @@ th, td{
 
     nav a{
         font-size: 1.3rem;
+    }
+    .container-select{
+        flex-direction: row;
     }
 }
